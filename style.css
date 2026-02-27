@@ -1,9 +1,88 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/** FONTS **/
+
+a {
+  color: white;
+  list-style: none;
+}
+
+button a{
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+.eyebrow-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8em;
+}
+
+h1 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 3em;
+}
 
 body {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-family: Verdana;
+}
+
+/** buttons **/
+
+button {
+	box-shadow: 3px 4px 0px 0px #8080804b;
+	background:linear-gradient(to bottom, #f7fbff 5%, #c7c7c7 100%);
+	background-color:#f7fbff;
+	border-radius:5px;
+	border:1px solid #8a8a8a;
+	display:inline-block;
+	cursor:pointer;
+	color:#363436;
+	font-family:Courier New;
+	font-size:16px;
+	font-weight:bold;
+	padding:12px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #97a2ad;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #c7c7c7 5%, #f7fbff 100%);
+	background-color:#c7c7c7;
+  opacity: 0.8;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+/** layout **/
+.flex-vertical-12px {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.existencial-question {
+  padding: 2rem 0 2rem 0;
+}
+
+section {
+  padding: 8rem;
+}
+
+.main-container {
+margin: auto;
+max-width: 1024px;
+}
+
+@media (min-width: 30em) {
+    .row { width: 100%; display: table; table-layout: fixed; }
+    .col { display: table-cell; }
 }
