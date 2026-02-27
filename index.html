@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link rel="icon" type="image/x-icon" href="/images/favicon-16.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dantesco</title>
@@ -9,6 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+    <script>
+      $.getJSON(
+  `https://proxy.corsfix.com/?url=${encodeURIComponent(
+    "https://www.bing.com/HPImageArchive.aspx?format=js&n=1"
+  )}&callback=?`,
+  function (data) {
+    console.log("API Data: ", data);
+  }
+);
+    </script>
 
   </head>
   <body>
@@ -27,17 +41,22 @@
     </div>
     <button><a href="/about.html">About</a></button>
     <button><a href="/reviews/games.html">Game reviews</a></button>
-    <form class="existencial-question" method="post" action="https://poll.pollcode.com/99928458">
-      <div style="background-color:#000000;padding:2px;width:282px;font-family:Arial;font-size:small;color:#ffffff;">
-        <div style="padding:2px 0px 4px 2px;"><strong>Tangananica or tangananá?</strong>
-        </div><input type="radio" name="answer" value="1" id="answer999284581" style="float:left;" />
-        <label for="answer999284581" style="float:left;width:257px;">Tangananica :o (really?)</label>
-        <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer999284582" style="float:left;" />
-        <label for="answer999284582" style="float:left;width:257px;">Tangananá :)</label><div style="clear:both;height:2px;">
+    
+    <div class="existencial-question">
+      <p>And, of course, the most important question:</p>
+       <form method="post" action="https://poll.pollcode.com/34681193">
+      <div style="background-color:#000000;padding:2px;width:300px;font-family:Courier New;font-size:small;color:#FFFFFF;">
+      <br>
+      <div style="padding:2px 0px 4px 2px;"><strong>Tangananica or tangananá?</strong></div><div align="center">
+        <input type="radio" name="answer" value="1" id="answer346811931"> <label for="answer346811931">Tangananica</label> 
+        <input type="radio" name="answer" value="2" id="answer346811932"> <label for="answer346811932">Tangananá</label> 
+        <input type="radio" name="answer" value="3" id="answer346811933"> <label for="answer346811933">Spátula</label> <nobr><input type="submit" value=" Vote ">&nbsp;&nbsp;
+          <input type="submit" name="view" value=" View "></nobr></div>
+          <br>
+          <div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
+    </div>
+   
 
-        </div><div style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View ">
-        
-        </div><div align="left" style="font-size:10px"><br>pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
   </div>
    
 
